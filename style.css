@@ -1,0 +1,158 @@
+body {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#tShirt1,
+#Sweatshirt1,
+#shoe1 {
+  height: 150px;
+}
+#allProduct > div {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 320px;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+h1 {
+  text-align: center;
+}
+table {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  border-spacing: 6px;
+}
+table,
+td,
+th {
+  padding: 5px;
+  border: 1px solid gainsboro;
+  border-collapse: collapse;
+}
+td {
+  border-radius: 5px;
+}
+.edit {
+  color: orange;
+  border: none;
+  background-color: transparent;
+}
+.delete {
+  color: red;
+  border: none;
+  background-color: transparent;
+}
+.innertop {
+  display: flex;
+}
+input[type="text"],
+input[type="email"],
+select[id="country"] {
+  width: 290px;
+  height: 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.addEmail,
+#addEmail,
+.addPhone,
+#addPhone {
+  background-color: green;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  height: 20px;
+  width: 20px;
+  font-size: 1em;
+}
+.removeEmail,
+#removeEmail,
+.removePhone,
+#removePhone {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  height: 20px;
+  width: 20px;
+  font-size: 1em;
+}
+p {
+  font-size: 0.75em;
+  padding: 0;
+  margin: 0 0 10px;
+}
+h3,
+h4 {
+  margin: 10px;
+}
+#submit {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  margin: 0 40%;
+}
+#fullname,
+#loc,
+#cloc {
+  display: flex;
+  justify-content: space-between;
+}
+#totaldiv {
+  display: flex;
+  justify-content: end;
+}
+#total {
+  margin: 10px 0;
+}
+#instruction {
+  border-radius: 5px;
+}
+#streetAddr,
+#streetAddr2 {
+  width: 600px;
+}
+#pay {
+  display: flex;
+  flex-direction: column;
+}
+#addItem {
+  background-color: darkcyan;
+  border: none;
+  border-radius: 25px;
+  width: 80px;
+  height: 25px;
+  color: white;
+}
+#order {
+  display: flex;
+  justify-content: space-between;
+}
+#phone0 {
+  margin: 0 0 10px;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>final assignment</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./fontawesome/css/all.css" />
+</head>
+<body>
+  <div>
+    <h1>Online Store</h1>
+  <hr />
+  <div class="content">
+  <form action="">
+  <!-- product -->
+  
+  <h3>Products</h3>
+  <br>
+  <div id="allProduct">
+    <div>
+      <!-- product 1 -->
+    <div class="product">
+      <div class="top">
+        <input type="checkbox" id="tShirt" class="product1" value="1" />
+        <img src="./t-shirt.jpg" alt="T-Shirt" id="tShirt1" />
+      </div>
+      <h3>T-Shirt</h3>
+      <h4 id="tvalue" value="1">$1.00</h4>
+     <div class="innertop">
+      <div>
+         <!-- quantity -->
+       <label for="quantity">Quantity</label><br />
+       <select name="quantity" id="quantity">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+       </select>
+      </div>
+       <div>
+        <!-- color -->
+       <label for="color">Color</label><br />
+       <select name="color" id="color">
+         <option value="Green">Green</option>
+         <option value="Red">Red</option>
+         <option value="Yellow">Yellow</option>
+         <option value="Orange">Orange</option>
+       </select>
+     </div>
+       </div>
+      <!-- T-Shirt Size -->
+      <label for="size">T-Shirt Size</label><br />
+      <select name="size" id="size">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+    </div>
+    <!-- product 2 -->
+    <div class="product">
+      <div class="top">
+        <input type="checkbox" id="Sweatshirt" class="product1" value="5" />
+        <img src="./Sweatshirt.jpg" alt="Sweatshirt" id="Sweatshirt1" />  
+      </div>
+      <h3>Sweatshirt</h3>
+      <h4>$5.00</h4>
+      <div class="innertop">
+      <div>
+        <!-- quantity -->
+      <label for="quantity">Quantity</label><br />
+      <select name="quantity" id="quantity2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <div>
+          <!-- color -->
+      <label for="color2">Color</label><br />
+      <select name="color" id="color2">
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Orange">Orange</option>
+      </select>
+      </div>
+      </div>
+      <!-- Sweatshirt Size -->
+      <label for="size2">Sweatshirt Size</label><br />
+      <select name="size" id="size2">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+    </div>
+    <!-- product 3 -->
+    <div class="product" id="p3">
+      <div class="top">
+        <input type="checkbox" id="shoe" class="product1" value="10" />
+      <img src="./shoe.webp" alt="shoe" id="shoe1" />
+      </div>
+      <h3>Shoes</h3>
+      <h4>$10.00</h4>
+      <div class="innertop">
+       <div>
+         <!-- quantity -->
+      <label for="quantity3">Quantity</label><br />
+      <select name="quantity" id="quantity3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+       </div>
+      <div>
+        <!-- Shoe Size -->
+      <label for="size3">Shoe Size</label><br />
+      <select name="size" id="size3">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      </div>
+      </div>
+    </div>
+    </div>
+    <span id="productErr"></span>
+  </div>
+  <hr />
+  <!-- total price -->
+  <div id="totaldiv">
+    <h3>Total:</h3>
+    <h3 >$</h3>
+    <h3 id="total">0.00</h3>
+  </div>
+
+</div>
+  <input type="hidden" id="id">
+  <!-- full name -->
+<div class="main">
+<div class="form1">
+
+  <h3>FullName</h3>
+
+ <div id="fullname">
+   <!-- first name -->
+   <div>
+    <input type="text" id="fname" /> <br>
+    <span id="fnameErr"></span>
+    <p>First Name</p>
+  </div>
+
+  <!-- last name -->
+  <div>
+    <input type="text" id="lname" /> <br>
+    <span id="lnameErr"></span>
+    <p>Last Name</p>
+  </div>
+ </div>
+
+  <!-- Email -->
+  <div class="box">
+    <label for="email">Email* :</label>
+    <div id="emailSet">
+      <input type="email" class="email" id="mail0" placeholder="ex. example@example.com" />
+      <button type="button" class="addEmail" onclick="addEmail()">+</button>
+      <button type="button" id="removeEmail" onclick="removeEmail()">-</button><br />
+      <span id="emailErr0"></span>
+      <p>example@example.com</p>
+    </div>
+  </div>
+
+  <!-- phone -->
+  <div class="box">
+    <label for="phone">Contact Number</label>
+    <div id="phoneSet">
+      <input type="text" class="phone" id="phone0" placeholder="(000) 000-0000" />
+      <button type="button" class="addPhone">+</button>
+      <button type="button" id="removePhone">-</button> <br>
+      <span id="phoneErr0"></span>
+    </div>
+  </div>
+
+</div>
+
+<div >
+
+
+
+
+  <!-- Billing address -->
+  <h3>Billing Address</h3>
+  <!-- street Address -->
+  <input type="text" id="streetAddr" /> <br>
+  <span id="streetAddrErr"></span>
+  <p>Street Address</p>
+
+  <!-- street address line 2 -->
+  <input type="text" id="streetAddr2" /> <br>
+  <span id="streetAddrErr2"></span>
+  <p>Street Address Line 2</p>
+
+ <div id="loc">
+   <div>
+    <!-- City -->
+   <input type="text" id="city" /> <br>
+   <span id="cityErr"></span>
+   <p>City</p>
+   </div>
+   <div>
+    <!-- State -->
+   <input type="text" id="state" /> <br>
+   <span id="stateErr"></span>
+   <p>State/Province</p>
+   </div>
+ </div>
+  <div id="cloc">
+   <div>
+     <!-- pin -->
+  <input type="text" id="pin" /> <br>
+  <span id="pinErr"></span>
+  <p>Postal/Zip Code</p>
+   </div>
+  <div>
+    <!-- country -->
+  <select name="country" id="country">
+    <option value="">Please Select</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="China">China</option>
+    <option value="Japan">Japan</option>
+  </select>
+  <br>
+  <span id="countryErr"></span>
+  <p>Country</p>
+  </div>
+  </div>
+
+  <!-- address conformation -->
+  <h3>Is shipping address same as billing address?</h3>
+  <input type="radio" name="shippingAddr" id="shippingAddr" class="shippingAddr" value="Yes" />
+  <label for="shippingAddr">Yes</label>
+  <input type="radio" name="shippingAddr" id="shippingAddr1" class="shippingAddr" value="No" />
+  <label for="shippingAddr1">No</label>
+  <br>
+  <span id="shippingAddrErr"></span>
+
+  <!-- Gift -->
+  <h3>Send Gift?</h3>
+  <input type="radio" name="gift" id="gift" class="gift" value="Yes" />
+  <label for="gift">Yes</label>
+  <input type="radio" name="gift" class="gift" id="gift1" value="No" />
+  <label for="gift1">No</label>
+  <br>
+  <span id="giftErr"></span>
+
+  <!-- Spacial Instructions -->
+  <h3>Special Instructions</h3>
+  <textarea name="instruction" id="instruction" cols="80" rows="5"></textarea>
+  <br>
+  <span id="instructionErr"></span>
+
+  <h3>Payment Methods</h3>
+  <div id="pay">
+    <!-- Payment Methods -->
+  <div>
+    <input type="radio" name="payment" id="payment" class="payment" value="Debit or Credit Card" />
+  <label for="payment">Debit or Credit Card</label>
+  </div>
+  <div>
+    <input type="radio" name="payment" id="payment1" class="payment" value="Paypal" />
+    <label for="payment1">Paypal</label>
+  </div>
+  <br>
+  <span id="paymentErr"></span>
+  </div>
+</div>
+</div>
+
+  <!-- submit order -->
+  <hr />
+  <button type="button" id="submit">Submit Order</button>
+</form>
+  </div>
+
+  <div>
+    <div id="order">
+      <h3>Orders</h3>
+      <button id="addItem">+Add Item</button>
+    </div>
+    <table class="tabledata">
+      <tr class=" tableheading">
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+      <tbody id="tabBody" ></tbody>
+    </table>
+  </div>
+
+  <!-- jQurey script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- custom script -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
